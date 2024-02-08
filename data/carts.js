@@ -1,4 +1,6 @@
 export let cart = JSON.parse(localStorage.getItem('cart'));
+//console.log(cart);
+//localStorage.removeItem('cart');
 
 if(!cart){
   cart = [{
@@ -10,6 +12,8 @@ if(!cart){
     quantity: 1,
     deliveryOptionId: '2'
   }];
+}else{
+  console.log('cart isnot empty')
 }
 
 function  saveToStorage(){
