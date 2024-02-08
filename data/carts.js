@@ -1,5 +1,5 @@
 export let cart = JSON.parse(localStorage.getItem('cart'));
-//console.log(cart);
+console.log(cart);
 //localStorage.removeItem('cart');
 
 if(!cart){
@@ -29,10 +29,10 @@ export function addToCart(productId){
     match.quantity++;
   }else{
     cart.push({
-      productId,
+      productId: productId,
       quantity: 1,
       deliveryOptionId: '1'
-    })
+    });
   }
   saveToStorage();
 }
