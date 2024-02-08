@@ -15,8 +15,6 @@ export function renderPaymentSummary(){
     //console.log(deliverOption);
     
   });
-  console.log(productPriceCents);
-  console.log(shippingPriceCents);
   const totalBeforeTax =  productPriceCents + shippingPriceCents;
   const taxCents = totalBeforeTax * 0.1;
   const totalCents = totalBeforeTax + taxCents;
@@ -60,8 +58,6 @@ export function renderPaymentSummary(){
         Place your order
       </button>
 `;
-
-console.log(paymentSummaryHtml);
 
 document.querySelector('.js-payement-summary').innerHTML = paymentSummaryHtml;
 

@@ -12,8 +12,6 @@ if(!cart){
     quantity: 1,
     deliveryOptionId: '2'
   }];
-}else{
-  console.log('cart isnot empty')
 }
 
 function  saveToStorage(){

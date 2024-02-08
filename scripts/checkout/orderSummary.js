@@ -14,7 +14,7 @@ export function renderOrderSummary(){
     const matchProduct = getProduct(productId);
 
     const deliveryOptionId = cartItem.deliveryOptionId;
-   // console.log(deliveryOptionId);
+    console.log(cartItem);
     const deliveryOption = getDeliveryOption(deliveryOptionId);
    // console.log(deliveryOption);
     const today = dayjs();
@@ -118,6 +118,7 @@ export function renderOrderSummary(){
   document.querySelectorAll('.js-delivery-option').forEach((element) => {
     element.addEventListener('click', () => {
       const {productId, deliveryOptionId} = element.dataset;
+      console.log(productId + deliveryOptionId);
       updateDeliveryOption(productId, deliveryOptionId);
       renderOrderSummary();
     });
