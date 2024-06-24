@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.ui.card {
+    width: 300px;
+}
+
+.status {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
